@@ -24,7 +24,7 @@ class ConnectionClass:
 
         self.rootframe.grid(row=0, column=0, sticky='news')
         greeting = CTkLabel(self.rootframe, text="ECU connected",
-                         padx=10, pady=10, text_font=("Arial", 24)).grid(row=0, column=1)
+                         padx=10, pady=10, font=("Arial", 24)).grid(row=0, column=1)
 
         self.tester = TesterClass(self.rootframe, self)
         self.tester_parameters = TesterParametersClass(self.rootframe, self)

@@ -19,10 +19,10 @@ class IPFrame:
         self.optionIP = ttk.OptionMenu(self.frame, self.ip_list, "Nothing")
         self.optionIP.grid(
             row=0, column=1, padx=10, pady=10)
-        buttonConnect = CTkButton(self.frame, text="Connect to this IP address", width=25, heigh=2,
+        buttonConnect = CTkButton(self.frame, text="Connect to this IP address", width=25, height=2,
                                command=self.connect_ip_address).grid(
             row=0, column=3, padx=10, pady=30)
-        button_info_ip = CTkButton(self.frame, text="Get info about this IP address", width=25, heigh=2,
+        button_info_ip = CTkButton(self.frame, text="Get info about this IP address", width=25, height=2,
                                 command=self.get_info_ip_address).grid(
             row=0, column=2, padx=10, pady=30)
         gui.mainframe.guiwelcome.raise_frame(self.frame)

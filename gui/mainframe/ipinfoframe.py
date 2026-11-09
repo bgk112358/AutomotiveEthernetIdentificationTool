@@ -22,7 +22,7 @@ class IPInfoFrame:
         title = CTkLabel(self.frame, text="Mac address:", padx=10,
                          pady=10).grid(row=1, column=0)
         self.mac_address = CTkLabel(self.frame, text="", padx=10,
-                                    pady=10, background="white")
+                                    pady=10, fg_color="white")
         self.mac_address.grid(row=1, column=1)
         ip_name_label = CTkLabel(self.frame, text="Name of IP address:").grid(
             row=0, column=2)

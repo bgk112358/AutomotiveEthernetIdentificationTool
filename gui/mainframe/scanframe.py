@@ -8,21 +8,21 @@ class ScanFrame:
     def __init__(self, rootframe, root, main_frame):
         greeting = CTkLabel(rootframe, text="Welcome in tool for Automatic\n identification of Automotive Ethernet",
                          padx=10,
-                         pady=10, text_font=("Arial", 20), background="white").grid(row=0, column=0,columnspan=2)
+                         pady=10, font=("Arial", 20), fg_color="white").grid(row=0, column=0,columnspan=2)
 
         self.frame = CTkFrame(rootframe)
         self.frame.grid(row=1, column=1, padx=10, pady=10,sticky='news')
         self.main_frame = main_frame
         connectping = CTkLabel(self.frame, text="Scan IP address\n on lan using ping", padx=10, pady=10,
-                            background="white").grid(
+                            fg_color="white").grid(
             row=0, column=0)
         connectdoip = CTkLabel(self.frame, text="Scan IP using DoIP announcement message,\n"
                                              "Click this button and power cycle your ECU.\n"
                                              "If announcement is not received in 20 seconds,\n connection is unsuccesful.",
-                            padx=10, pady=10, background="white").grid(
+                            padx=10, pady=10, fg_color="white").grid(
             row=0, column=1)
         connectnetworklistner = CTkLabel(self.frame, text="Try to connect to your ECU\n by using IP addresses\n"
-                                                       "that are active on local network", background="white").grid(
+                                                       "that are active on local network", fg_color="white").grid(
             row=0,
             column=2)
 
